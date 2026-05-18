@@ -1,0 +1,89 @@
+# Minecraft Plugin Manager - サーバー設定ファイル
+# このファイルを servers.yaml にコピーして、サーバー情報を入力してください
+
+servers:
+  lobby:
+    # ========== 基本情報 ==========
+    name: "ロビー"
+    version: "1.21.6"
+    server_type: "paper"  # paper, spigot, forge, fabric, arclight, mohist, bungeecord, velocity
+    
+    # ========== 接続設定 ==========
+    # 同一マシン上のサーバー
+    type: "local"
+    plugin_path: "/opt/minecraft/lobby/plugins"
+    
+    # リモートマシン上のサーバー（type: "remote" に変更して使用）
+    # type: "remote"
+    # ip: "192.168.1.100"
+    # username: "minecraft"
+    # password: "your_password"  # または ssh_key: "/path/to/key"
+    # plugin_path: "/opt/minecraft/lobby/plugins"
+    
+    # ========== RCON設定 ==========
+    rcon:
+      enabled: true
+      host: "localhost"  # リモートの場合は IP アドレス
+      port: 25575
+      password: "your_rcon_password"  # server.properties の rcon.password
+    
+    # ========== 更新設定 ==========
+    auto_restart: true
+    restart_warning_minutes: 5
+    
+    # ========== 通知設定 ==========
+    notification:
+      discord: true
+      console: true
+
+  survival:
+    name: "サバイバル"
+    version: "1.21.1"
+    server_type: "paper"
+    type: "local"
+    plugin_path: "/opt/minecraft/survival/plugins"
+    rcon:
+      enabled: true
+      host: "localhost"
+      port: 25576
+      password: "your_rcon_password"
+    auto_restart: true
+    restart_warning_minutes: 5
+    notification:
+      discord: true
+      console: true
+
+  minigame1:
+    name: "ミニゲーム1"
+    version: "1.20.6"
+    server_type: "paper"
+    type: "remote"
+    ip: "192.168.1.100"
+    username: "minecraft"
+    password: "your_password"
+    plugin_path: "/opt/minecraft/minigame1/plugins"
+    rcon:
+      enabled: true
+      host: "192.168.1.100"
+      port: 25577
+      password: "your_rcon_password"
+    auto_restart: true
+    restart_warning_minutes: 5
+    notification:
+      discord: true
+      console: true
+
+# グローバル設定
+global:
+  # 更新チェック間隔（分）
+  check_interval_minutes: 60
+  
+  # バックアップ設定
+  auto_backup: true
+  backup_retention_days: 14
+  
+  # Discord通知（サーバーごとに上書き可能）
+  discord:
+    enabled: true
+    webhook_url: "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN"
+    mention_on_update: "@here"  # @role_name, @user_id, または leave empty
