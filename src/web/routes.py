@@ -4,6 +4,13 @@ Web routes for the Flask application
 
 from flask import Blueprint, render_template, jsonify, request, current_app
 import logging
+import sys
+from pathlib import Path
+
+# Add src directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from core.config_loader import ConfigLoader
 
 logger = logging.getLogger(__name__)
 
@@ -22,7 +29,6 @@ def get_servers():
     Get list of all servers
     """
     try:
-        from ..core.config_loader import ConfigLoader
         config_path = current_app.config.get('CONFIG_PATH', 'config/servers.yaml')
         loader = ConfigLoader(config_path)
         servers = loader.get_servers()
@@ -44,7 +50,6 @@ def get_server(server_name: str):
     Get specific server information
     """
     try:
-        from ..core.config_loader import ConfigLoader
         config_path = current_app.config.get('CONFIG_PATH', 'config/servers.yaml')
         loader = ConfigLoader(config_path)
         server = loader.get_server(server_name)
