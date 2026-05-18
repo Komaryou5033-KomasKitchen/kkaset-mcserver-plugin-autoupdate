@@ -1,4 +1,4 @@
-# Minecraft Plugin Manager - サーバー設定ファイル
+# KKASET Minecraft Plugin Auto-Update - Server Configuration
 # このファイルを servers.yaml にコピーして、サーバー情報を入力してください
 
 servers:
@@ -60,13 +60,13 @@ servers:
     type: "remote"
     ip: "192.168.1.100"
     username: "minecraft"
-    password: "your_password"
+    password: "${SSH_PASSWORD}"  # 環境変数から取得（推奨）
     plugin_path: "/opt/minecraft/minigame1/plugins"
     rcon:
       enabled: true
       host: "192.168.1.100"
       port: 25577
-      password: "your_rcon_password"
+      password: "${RCON_PASSWORD}"  # 環境変数から取得（推奨）
     auto_restart: true
     restart_warning_minutes: 5
     notification:
@@ -85,5 +85,5 @@ global:
   # Discord通知（サーバーごとに上書き可能）
   discord:
     enabled: true
-    webhook_url: "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN"
+    webhook_url: "${DISCORD_WEBHOOK_URL}"  # 環境変数から取得
     mention_on_update: "@here"  # @role_name, @user_id, または leave empty

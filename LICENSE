@@ -1,21 +1,48 @@
-MIT License
+# Komaryou5033 Custom License (KCL)
 
-Copyright (c) 2026 Komaryou5033-KomasKitchen
+## License Terms
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+### Grant of Rights
+You are free to use, modify, and distribute this software for any purpose, 
+including commercial purposes, without restriction.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+### Conditions
+1. License notice and copyright notice must be included in any distribution
+2. The original author (Komaryou5033) must be credited in documentation or README
+3. Redistribution policy:
+   - Modifications should be provided to the original author first
+   - Official distribution through the author is preferred over independent redistribution
+   - Community contributions are welcome via GitHub Issues/Pull Requests
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+### No Warranty
+THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+
+### Attribution
+- Original Author: Komaryou5033 (GitHub: Komaryou5033-KomasKitchen)
+- Project: kkaset-mcserver-plugin-autoupdate
+- Repository: https://github.com/Komaryou5033-KomasKitchen/kkaset-mcserver-plugin-autoupdate
+
+---
+
+## 日本語版
+
+## ライセンス条件
+
+### 利用権
+本ソフトウェアは、商用・非商用を問わず、如何なる目的においても自由に使用・改変・配布することができます。
+
+### 条件
+1. 本ソフトウェアの配布時には、ライセンス表記と著作権表記を含める必要があります
+2. ドキュメントまたはREADMEで元の作者（Komaryou5033）のクレジット表記が必要です
+3. 再配布ポリシー：
+   - 改変内容は、まず元の作者に提供することを推奨しています
+   - 公式の配布（作者経由）による配布を優先しています
+   - GitHubのIssue/Pull Requestを通じたコミュニティへの貢献を歓迎します
+
+### 保証の否認
+本ソフトウェアは「現状のまま」提供され、いかなる種類の保証も致しません。
+
+### 著作権表記
+- 元の作者: Komaryou5033 (GitHub: Komaryou5033-KomasKitchen)
+- プロジェクト: kkaset-mcserver-plugin-autoupdate
+- リポジトリ: https://github.com/Komaryou5033-KomasKitchen/kkaset-mcserver-plugin-autoupdate
