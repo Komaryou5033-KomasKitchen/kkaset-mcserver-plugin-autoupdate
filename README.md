@@ -1,5 +1,7 @@
 # 🎮 KKASET Minecraft Plugin Auto-Update
 
+## 現在開発中です（v0.1.0）
+
 Minecraft サーバーのプラグイン・MOD を自動で検出し、更新通知を行い、管理者の承認後に自動で更新するツール。
 
 Paper、Spigot、Forge、Fabric、Arclight、Mohist、BungeeCord、Velocity に対応し、バージョン 1.12.2 から最新版まで利用可能です。
